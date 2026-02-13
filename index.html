@@ -19,19 +19,30 @@ caja de texto input
         <link rel="stylesheet" href="style.css" />
         <script src= "script.js" defer> </script>
     </head>
-    <body>
-        <h1 class = "campo_login" > Login </h1>
-        <p class = "campo_correo" > Email  - Usuario </p>
-        <input type="text">
-         <p class = "campo_password" > </p>
-        <p class = "campo_contrasenia" > Contrasenia  </p>
-        <input type="text">
-        <p> </p>
-       
+        <body>
+            <div class="contenedorlogin">
+                <h1 class="titulo">Login</h1>
+
+                <form action="/login" method="POST">
+>
+
+                    <label for="email">Email - Usuario</label>
+                    <input type="text" id="email" name="email" class="campo_correo" placeholder="correo@email.com">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" class="campo_contrasenia"  placeholder="********">
+
+
+                    <button type="submit" class="boton">Siguiente</button>
+
+                </form>
+            </div>
+        </body>
+
         
         
                     
-    </body>
+    
     
 </html>
 
